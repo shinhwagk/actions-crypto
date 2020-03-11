@@ -6,12 +6,15 @@ inputs:
     description: 'The Go version to download (if necessary) and use. Example: 1.9.3'
   crypto-action: 
     description: 'The Go version to download (if necessary) and use. Example: 1.9.3'
+  crypto-password:
+    description: 'The Go version to download (if necessary) and use. Example: 1.9.3'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.crypto-path }}
     - ${{ inputs.crypto-action }}
+    - ${{ inputs.crypto-password }}
 branding:
   icon: 'code'
   color: 'yellow'
