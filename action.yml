@@ -4,11 +4,14 @@ author: 'shinhwagk'
 inputs:
   crypto-path: 
     description: 'The Go version to download (if necessary) and use. Example: 1.9.3'
+  crypto-action: 
+    description: 'The Go version to download (if necessary) and use. Example: 1.9.3'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.crypto-path }}
+    - ${{ inputs.crypto-action }}
 branding:
   icon: 'code'
   color: 'yellow'
