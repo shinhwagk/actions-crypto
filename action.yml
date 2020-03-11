@@ -1,0 +1,13 @@
+  
+name: 'actions-crypto'
+description: 'a simple crypto action for file or directory'
+author: 'shinhwagk'
+inputs:
+  path: 
+    description: 'The Go version to download (if necessary) and use. Example: 1.9.3'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'code'
+  color: 'yellow'
