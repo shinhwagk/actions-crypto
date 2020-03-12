@@ -19,5 +19,5 @@ runs:
     - ${{ inputs.crypto-action }}
     - ${{ inputs.crypto-password }}
 branding:
-  icon: 'lock'
-  color: 'red'
+  icon: 'unlock'
+  color: 'orange'
