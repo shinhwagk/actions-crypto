@@ -4,27 +4,27 @@ c_path=$1
 c_action=$2
 c_password=$3
 
-dec_file() {
+function dec_file() {
   echo "dec file ${1}";
   [ "${1: -4}" == '.enc' ] && { openssl enc -d -a -aes256 -pbkdf2 -k ${2} -in $1 -out "${1::-4}" && rm -f $1; } || {
     echo "dec file ${1} failure."
   }
 }
 
-enc_file() {
+function enc_file() {
   echo "enc file ${1}";
   [ "${1: -4}" != '.enc' ] && { openssl enc -e -a -aes256 -pbkdf2 -k ${2} -in $1 -out "${1}.enc" && rm -f $1; } || {
     echo "enc file ${1} failure."
   }
 }
 
-dec_dir() {
+function dec_dir() {
   find $1 -type f -name '*.enc' | while read line; do
     dec_file $line $2;
   done
 }
 
-enc_dir() {
+function enc_dir() {
   find $1 -type f ! -name '*.enc' | while read line; do
     enc_file $line $2;
   done
