@@ -2,6 +2,9 @@
 > a simple crypto script (symmetrical encryption )
 > use openssl enc command.
 
+### Important!!!
+> Files are deleted after encryption
+
 # usage
 ```yml
 name: Test actions crypto
