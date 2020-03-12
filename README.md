@@ -18,7 +18,7 @@ jobs:
           crypto-path: test.file # file or direcotry
           crypto-action: enc     # enc or dec
           crypto-password:  ${{ secrets.pass }} # passphrase
-      - run: cat test.file || cat test.file.enc
+      - run: cat test.file || cat test.file.enc  # Files are deleted after encryption
       - name: Decryption
         uses: shinhwagk/actions-crypto@0.0.1
         with:
