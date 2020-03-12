@@ -19,7 +19,7 @@ jobs:
           crypto-action: enc     # enc or dec
           crypto-password:  ${{ secrets.pass }} # passphrase
       - run: cat test.file || cat test.file.enc
-      - name: encryption
+      - name: Decryption
         uses: shinhwagk/actions-crypto@0.0.1
         with:
           crypto-path: test.file.enc # file or direcotry
