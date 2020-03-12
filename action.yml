@@ -2,12 +2,15 @@ name: 'actions-crypto'
 description: 'a simple crypto(encrypt/decrypt) action for file or directory'
 author: 'shinhwagk'
 inputs:
-  crypto-path: 
-    description: 'The Go version to download (if necessary) and use. Example: 1.9.3'
-  crypto-action: 
-    description: 'The Go version to download (if necessary) and use. Example: 1.9.3'
+  crypto-path:
+    required: true
+    description: ''
+  crypto-action:
+    required: true
+    description: ''
   crypto-password:
-    description: 'The Go version to download (if necessary) and use. Example: 1.9.3'
+    required: true
+    description: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -16,5 +19,5 @@ runs:
     - ${{ inputs.crypto-action }}
     - ${{ inputs.crypto-password }}
 branding:
-  icon: 'lock'
-  color: 'red'
+  icon: 'code'
+  color: 'yellow'

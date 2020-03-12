@@ -1,5 +1,5 @@
 # actions-crypto
-a simple crypto script (symmetrical encryption ), use **openssl enc -aes256** command.
+a simple crypto script (symmetrical encryption), use **openssl enc -aes256** command.
 
 ### Important !!!
 > Files are deleted after encryption and decryption
