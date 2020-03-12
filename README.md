@@ -1,9 +1,8 @@
 # actions-crypto
-> a simple crypto script (symmetrical encryption )
-> use openssl enc command.
+a simple crypto script (symmetrical encryption ), use **openssl enc -aes256** command.
 
-### Important!!!
-> Files are deleted after encryption
+### Important !!!
+> Files are deleted after encryption and decryption
 
 # usage
 ```yml
