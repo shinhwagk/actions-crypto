@@ -14,4 +14,14 @@ jobs:
           crypto-path: test.file
           crypto-action: enc
           crypto-password: 123456
+      - name: check enc
+        run: cat test.file.enc
+      - name: dec
+        uses: ./
+        with:
+          crypto-path: test.file.enc
+          crypto-action: dec
+          crypto-password: 123456
+      - name: check enc
+        run: cat test.file
         
