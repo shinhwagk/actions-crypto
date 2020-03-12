@@ -1,5 +1,5 @@
 name: 'actions-crypto'
-description: 'a simple crypto action for file or directory'
+description: 'a simple crypto(encrypt/decrypt) action for file or directory'
 author: 'shinhwagk'
 inputs:
   crypto-path: 
