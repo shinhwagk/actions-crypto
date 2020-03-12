@@ -6,6 +6,7 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: echo abc > test.file
       - name: Hello world
         uses: ./
