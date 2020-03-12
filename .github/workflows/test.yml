@@ -2,8 +2,7 @@ name: Test actions crypto
 on: [push]
 
 jobs:
-  build:
-    name: Greeting
+  local_repo_test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
