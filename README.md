@@ -1,5 +1,6 @@
 # actions-crypto
 > a simple crypto script (symmetrical encryption )
+> use openssl enc command.
 
 # usage
 ```yml
