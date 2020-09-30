@@ -8,3 +8,5 @@
 		"terminal.integrated.shell.linux": "/bin/bash"
 	}
 }
+- name: actions-crypto
+  uses: shinhwagk/actions-crypto@0.0.9
